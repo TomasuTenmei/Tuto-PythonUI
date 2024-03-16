@@ -1,65 +1,53 @@
-# Doc utilisation de python avec Qt et création d'un exécutable du projet :
+# Guide d'utilisation de Python avec Qt et création d'un exécutable pour le projet
 
-## Pour crée un environement :
+## Pour créer un environnement :
 
 ```cmd
 python.exe -m venv env
 ```
 
-Si vous avez une installation de Python particuliaire :
+Si vous avez une installation de Python particulière :
 
 ```cmd
 & c:/Votre/chemin/vers/leDossier/python.exe -m venv env
 ```
 
-**Pour lancer l'environement fair la commande :**
+**Pour lancer l'environnement, exécutez la commande :**
 
 ```cmd
 .\env\Script\activate
 ```
 
-> [!NOTE]
-> Sur `VSCode` vous pouvez (si il ne sait pas crée tout seul) créer un dossier 
-> `.vscode` dans le qu'elle créer un fichier `settings.json`.
->
-> Dans le fichier `settings.json` écrir :
-> ```json
-> {
->    "python.pythonPath": "env\\Scripts\\python.exe"
-> }
-> ```
-> Cela lancera l'environement Python à l'ouverture du dossier de travail.
+## Pour installer une bibliothèque dans l'environnement :
 
-## Pour installer une librairie dans l'environement :
+**Pour rechercher les dépendances de la bibliothèque :**
 
-**Rechercher les dépendances de la lib.**
+Ouvrez dans `WinPython` -> `WinPython Command Prompt`.
 
-Ouvrir dans `WinPython` ouvrir `WinPython Command Prompt`.
-
-Taper la commande : 
+Tapez la commande : 
 ```cmd
 pip show lib
 ```
 
-Recuperé la `Version` et les `Requires`.
+Notez la `Version` et les `Requires`.
 
 > [!NOTE]
 > Si la commande `pip show` retourne :
-> `WARNING: Package(s) not found: "la librairie"`, 
-> c'est soit que _la librairie_ est un bibliothèque standard de python qui n'a 
-> pas besoin d'être ajouté, soit qu'elle n'est pas déjà dans votre système donc 
-> vous devez trouver vous même les dépendances et versions compatibles avec 
-> votre installation.
+> `WARNING: Package(s) not found: "la librairie"`,
+> cela signifie soit que la librairie est une bibliothèque standard de Python qui
+> n'a pas besoin d'être ajoutée, soit qu'elle n'est pas encore installée dans votre
+> système. Dans ce dernier cas, vous devrez rechercher vous-même les dépendances et
+> les versions compatibles avec votre installation.
 
-**Si il y a des `Requires` :**
+**S'il y a des `Requires` :**
 
-Rechercher le(s) dépendance(s) jusqu'à qu'il n'y en est plus
+Recherchez le(s) dépendance(s) jusqu'à ce qu'il n'y en ait plus.
 
-**Si il n'y a pas des `Requires` :**
+**S'il n'y a pas de `Requires` :**
 
-Téléchargé sur [L'index des paquets Python](https://pypi.org) la lib,
-prendre la bonne `Version` dans l'onglet `Historique des versions` et
-télécharger _la librairie_ et l'ajouter au dossier `bdd_lib`.
+Téléchargez depuis [L'index des paquets Python](https://pypi.org) la librairie,
+choisissez la bonne `Version` dans l'onglet `Historique des versions` et
+téléchargez _la librairie_ que vous ajouterez au dossier `bdd_lib`.
 
 > [!TIP]
 > Choisir de préférence la distribution compilées (si disponible).
@@ -147,7 +135,8 @@ utilisé par Python.
 > ```cmd
 > pyside6-rcc fichier.qrc -o rc_fichier.py
 > ```
-> Notez que des ressources en format `.svg` sont plus adaptées aux interfaces graphiques car elles sont en vectoriels donc redimensionnables.
+> Notez que des ressources en format `.svg` sont plus adaptées aux interfaces
+> graphiques car elles sont en vectoriels donc redimensionnables.
 
 ### Utilisation de l'interface graphique :
 
