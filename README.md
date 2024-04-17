@@ -2,7 +2,7 @@
 
 <div style="display: flex;">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Qt_logo_neon_2022.svg/langfr-180px-Qt_logo_neon_2022.svg.png" style="width: 20%;">
-    <div style="width: 100px; height: 1px; font-size: 45px; text-align: center;">X</div>
+    <div style="width: 50px; height: 1px; font-size: 45px; text-align: center;">X</div>
     <img src="https://www.python.org/static/img/python-logo@2x.png" style="width: 50%;">
 </div>
 
