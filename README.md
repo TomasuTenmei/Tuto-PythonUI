@@ -1,4 +1,4 @@
-![Cover](https://commons.wikimedia.org/w/index.php?title=File:Qt_logo_neon_2022.svg&lang=fr&uselang=fr)
+![Cover](https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Qt_logo_neon_2022.svg/langfr-180px-Qt_logo_neon_2022.svg.png)
 
 # Guide d'utilisation de Python avec Qt et création d'un exécutable pour le projet
 
@@ -42,6 +42,8 @@ pip install -r requirements.txt
 basé sur la bibliothèque Qt. Pour `Python` il existe deux librairies qui utilise 
 la bibliothèque Qt, `PyQt` et `PySide`. Dans cette exemple nous utiliserons la
 librairie `PySide6`.
+
+<img src="https://qt-wiki-uploads.s3.amazonaws.com/images/e/ed/Qtforpython2023.png" style="width: 10%;">
 
 La documentation pour 
 [Qt Designer](https://doc.qt.io/qt-6/qtdesigner-manual.html) 
