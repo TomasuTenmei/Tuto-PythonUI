@@ -1,3 +1,5 @@
+![Cover](https://commons.wikimedia.org/w/index.php?title=File:Qt_logo_neon_2022.svg&lang=fr&uselang=fr)
+
 # Guide d'utilisation de Python avec Qt et création d'un exécutable pour le projet
 
 ## Créer un environnement :
