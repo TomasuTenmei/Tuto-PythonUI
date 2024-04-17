@@ -1,6 +1,6 @@
 # Guide d'utilisation de Python avec Qt et création d'un exécutable pour le projet
 
-## Pour créer un environnement :
+## Créer un environnement :
 
 ```cmd
 python.exe -m venv env
@@ -18,60 +18,9 @@ Si vous avez une installation de Python particulière :
 .\env\Script\activate
 ```
 
-## Pour installer une bibliothèque dans l'environnement :
+## Créer et utiliser le fichier `requirements.txt` :
 
-**Pour rechercher les dépendances de la bibliothèque :**
-
-Ouvrez dans `WinPython` -> `WinPython Command Prompt`.
-
-Tapez la commande : 
-```cmd
-pip show lib
-```
-
-Notez la `Version` et les `Requires`.
-
-> [!NOTE]
-> Si la commande `pip show` retourne :
-> `WARNING: Package(s) not found: "la librairie"`,
-> cela signifie soit que la librairie est une bibliothèque standard de Python qui
-> n'a pas besoin d'être ajoutée, soit qu'elle n'est pas encore installée dans votre
-> système. Dans ce dernier cas, vous devrez rechercher vous-même les dépendances et
-> les versions compatibles avec votre installation.
-
-**S'il y a des `Requires` :**
-
-Recherchez le(s) dépendance(s) jusqu'à ce qu'il n'y en ait plus.
-
-**S'il n'y a pas de `Requires` :**
-
-Téléchargez depuis [L'index des paquets Python](https://pypi.org) la librairie,
-choisissez la bonne `Version` dans l'onglet `Historique des versions` et
-téléchargez _la librairie_ que vous ajouterez au dossier `bdd_lib`.
-
-> [!TIP]
-> Choisir de préférence la distribution compilées (si disponible).
-
-> [!WARNING]
-> Les distributions compilées ne sont pas toutes compatible avec votre 
-> environement.
-> Il faut choisir la bonne version si elle n'est pas `any`.
-> 
-> Exemple : pour `numpy` sur `Windows 64 bits` avec `Python 3.9.10`, 
-> il faut choisir la version `cp39-win_amd64`.
-
-**Maintenant que tout les librairies sont dans le dossier pour les installer :**
-
-```cmd
-pip install lib --no-index --find-link file:bdd_lib/
-```
-
-Ne tapé que _la librairie_ que vous avez besoin, la commande trouvera elle même 
-les dépendances de _la librairie_ dans le dossier.
-
-## Pour créer et utiliser le fichier `requirements.txt` :
-
-_Le fichier requirements.txt permet de partager le code à une autre personne._
+_Le fichier requirements.txt permet de partager le code à une autre personne. En listant toutes les librairies que vous utilisées._
 
 **Pour créer la fichier `requirements.txt` executer la commande :**
 
@@ -79,32 +28,18 @@ _Le fichier requirements.txt permet de partager le code à une autre personne._
 pip freeze > requirements.txt
 ```
 
-Pour transmettre le code à une autre personne, il vous suffit de lui envoyer
-tout sauf le dossier `env` et (si vous l'avez) le dossier `.vscode`.
-
 **Pour installer les librairies grâce au fichier `requirements.txt` :**
 
 ```cmd
-pip install -r requirements.txt --no-index --find-link file:bdd_lib/
+pip install -r requirements.txt
 ```
-
-> [!TIP]
-> Si la personne à internet sur son poste de travail, elle a juste à taper :
-> ```
-> pip install -r requirements.txt
-> ```
-> ou à installer les librairies depuis 
->[L'index des paquets Python](https://pypi.org) avec la commande :
-> ```
-> pip install lib
-> ```
 
 ## Pour créer une interface graphique en utilisant `Qt Designer` :
 
 `Qt Designer` est une application de création d'interface graphique multi-langage
 basé sur la bibliothèque Qt. Pour `Python` il existe deux librairies qui utilise 
 la bibliothèque Qt, `PyQt` et `PySide`. Dans cette exemple nous utiliserons la
-librairie `PySide6`. 
+librairie `PySide6`.
 
 La documentation pour 
 [Qt Designer](https://doc.qt.io/qt-6/qtdesigner-manual.html) 
