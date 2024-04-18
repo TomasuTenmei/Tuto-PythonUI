@@ -1,6 +1,4 @@
-# README
-
-![Logo](Logo.png)
+# ![Logo](Logo.png)
 
 ## Guide d'utilisation de Python avec Qt et création d'un exécutable pour le projet
 
@@ -45,19 +43,19 @@ basé sur la bibliothèque Qt. Pour `Python` il existe deux librairies qui utili
 la bibliothèque Qt, `PyQt` et `PySide`. Dans cette exemple nous utiliserons la
 librairie `PySide6`.
 
-![Qt for Python](https://qt-wiki-uploads.s3.amazonaws.com/images/e/ed/Qtforpython2023.png){: width="10%"}
+<img src="https://qt-wiki-uploads.s3.amazonaws.com/images/e/ed/Qtforpython2023.png" style="width: 10%;">
 
-La documentation pour 
+La documentation pour
 [Qt Designer](https://doc.qt.io/qt-6/qtdesigner-manual.html) 
 et pour [PySide6](https://doc.qt.io/qtforpython-6/index.html).
 
-#### Création de l'interface graphique :
+#### Création de l'interface graphique
 
-Dans `Qt Designer` crée un `New Form -> Main Window`. Ajouter tout les widgets 
+Dans `Qt Designer` crée un `New Form -> Main Window`. Ajouter tout les widgets
 Qt que vous avez besoin et penser à leurs donner un `objectName` cohérant car
 c'est cette variable qui va nous permettre d'y accéder dans le programme Python.
 
-Sauvegarder votre interface graphique dans le dossier de travail, sous le nom 
+Sauvegarder votre interface graphique dans le dossier de travail, sous le nom
 `MainWindow.ui`. Maintenant que nous avons notre interface, il faut la convertir
 en Python. Pour cela vous allez taper la commande suivante :
 
@@ -69,8 +67,8 @@ Cela va générer le code de votre interface graphique pour qu'il puisse être
 utilisé par Python.
 
 > [!NOTE]
-> Si vous avez ajoutés des ressources dans votre interface depuis `Qt Designer`, 
-> vous devriez avoir aussi un fichier avec l'extension `.qrc` (Voir doc 
+> Si vous avez ajoutés des ressources dans votre interface depuis `Qt Designer`,
+> vous devriez avoir aussi un fichier avec l'extension `.qrc` (Voir doc
 > [Qt Designer](https://doc.qt.io/qt-6/qtdesigner-manual.html)). Dans ce cas là,
 > il vous faudra aussi générer le code Python pour les ressources avec :
 > ```cmd
