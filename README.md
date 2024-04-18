@@ -1,8 +1,10 @@
-<img src="Logo.png" style="width: 100%;">
+# README
 
-# Guide d'utilisation de Python avec Qt et création d'un exécutable pour le projet
+![Logo](Logo.png)
 
-## Créer un environnement :
+## Guide d'utilisation de Python avec Qt et création d'un exécutable pour le projet
+
+### Créer un environnement
 
 ```cmd
 python.exe -m venv env
@@ -20,7 +22,7 @@ Si vous avez une installation de Python particulière :
 .\env\Script\activate
 ```
 
-## Créer et utiliser le fichier `requirements.txt` :
+### Créer et utiliser le fichier `requirements.txt`
 
 _Le fichier requirements.txt permet de partager le code à une autre personne. En listant toutes les librairies que vous utilisées._
 
@@ -36,20 +38,20 @@ pip freeze > requirements.txt
 pip install -r requirements.txt
 ```
 
-## Pour créer une interface graphique en utilisant `Qt Designer` :
+### Pour créer une interface graphique en utilisant `Qt Designer`
 
 `Qt Designer` est une application de création d'interface graphique multi-langage
-basé sur la bibliothèque Qt. Pour `Python` il existe deux librairies qui utilise 
+basé sur la bibliothèque Qt. Pour `Python` il existe deux librairies qui utilise
 la bibliothèque Qt, `PyQt` et `PySide`. Dans cette exemple nous utiliserons la
 librairie `PySide6`.
 
-<img src="https://qt-wiki-uploads.s3.amazonaws.com/images/e/ed/Qtforpython2023.png" style="width: 10%;">
+![Qt for Python](https://qt-wiki-uploads.s3.amazonaws.com/images/e/ed/Qtforpython2023.png){: width="10%"}
 
 La documentation pour 
 [Qt Designer](https://doc.qt.io/qt-6/qtdesigner-manual.html) 
 et pour [PySide6](https://doc.qt.io/qtforpython-6/index.html).
 
-### Création de l'interface graphique :
+#### Création de l'interface graphique :
 
 Dans `Qt Designer` crée un `New Form -> Main Window`. Ajouter tout les widgets 
 Qt que vous avez besoin et penser à leurs donner un `objectName` cohérant car
@@ -77,7 +79,7 @@ utilisé par Python.
 > Notez que des ressources en format `.svg` sont plus adaptées aux interfaces
 > graphiques car elles sont en vectoriels donc redimensionnables.
 
-### Utilisation de l'interface graphique :
+#### Utilisation de l'interface graphique
 
 Vous pouvez normalement lancer le fichier `Exemple.py`. Il contient le minimum 
 de ce qu'il faut pour lancer votre interface. Il y est détaillé les commandes
